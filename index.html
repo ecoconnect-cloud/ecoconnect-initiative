@@ -109,12 +109,14 @@
       align-items: center;
       justify-content: center;
       box-shadow: 0 12px 26px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
     }
 
-    .brand-mark span {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #1b261b;
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: inherit;
     }
 
     .brand-text {
@@ -713,6 +715,12 @@
       background: #000;
     }
 
+    .app-mock-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
     .app-mock-label {
       margin-top: 0.4rem;
       font-size: 0.75rem;
@@ -834,15 +842,10 @@
       font-size: 0.8rem;
     }
 
-    .team-photo-placeholder-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 50%;
-      border: 2px dashed rgba(195, 211, 192, 0.7);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
+    .team-photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .team-role-tag {
@@ -1098,9 +1101,11 @@
     <header>
       <div class="max-width nav">
         <a href="#top" class="brand">
-          <div class="brand-mark"><span>Eco</span></div>
+          <div class="brand-mark">
+            <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/ChatGPT%20Image%20Nov%2030%2C%202025%2C%2005_01_35%20PM.png" alt="The EcoConnect Initiative logo" />
+          </div>
           <div class="brand-text">
-            <h1>EcoConnect Initiative</h1>
+            <h1>The EcoConnect Initiative</h1>
             <span>Empowering communities for a greener future</span>
           </div>
         </a>
@@ -1179,7 +1184,7 @@
             <div class="hero-visual-card">
               <div class="mockup-phone">
                 <div class="mockup-frame-inner">
-                  <!-- Replace src with your exported EcoConnect app screen -->
+                  <!-- EcoConnect app screen -->
                   <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/EcoConnect%20Display.png" alt="EcoConnect mobile app interface with education, reporting and challenges" />
                 </div>
                 <div class="mockup-caption">
@@ -1190,7 +1195,7 @@
 
               <div class="mockup-dashboard">
                 <div class="mockup-frame-inner">
-                  <!-- Replace src with your dashboard design prototype -->
+                  <!-- EcoConnect dashboard prototype -->
                   <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/EcoConnect%20Dashboard%20Design%20Prototype.png" alt="EcoConnect dashboard visualizing community reports, hotspots and risk alerts" />
                 </div>
                 <div class="mockup-caption">
@@ -1457,6 +1462,15 @@
                 <span class="soft-badge">Built for Lagos, adaptable beyond</span>
               </div>
             </div>
+
+            <div class="app-mockup-stack" aria-hidden="true">
+              <div class="app-mock-card">
+                <div class="app-mock-inner">
+                  <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/EcoConnect%20Displayb.png" alt="EcoConnect interface showing education, reporting and community actions" />
+                </div>
+                <div class="app-mock-label">
+                  <span>EcoConnect interface – learn, report, act in one place.</span>
+                  <span class="pill-tag"><span>App</span> Prototype screen</span>
                 </div>
               </div>
             </div>
@@ -1485,7 +1499,6 @@
                 Through practical demonstrations and stall‑to‑stall conversations, we highlighted the health and
                 economic costs of unmanaged waste – and how everyday actions can shift the story.
               </p>
-              <p class="project-meta">Images: <em>market_cleanup1a–1e</em> (to be featured in the gallery)</p>
             </article>
 
             <article class="project-card">
@@ -1496,7 +1509,6 @@
                 is partnering with youth groups and traders to co‑design a cleanup and sensitisation drive that pairs
                 action with ongoing reporting through the app.
               </p>
-              <p class="project-meta">Upcoming visuals: <em>market_cleanup2a–2d</em> to be added to the gallery.</p>
             </article>
           </div>
         </div>
@@ -1511,7 +1523,6 @@
               <h2 class="section-title" id="gallery-heading">Moments from the EcoConnect journey</h2>
               <p class="section-subtitle">
                 A growing visual archive of cleanups, trainings, and everyday people choosing a greener future.
-                Replace the placeholder images below with your <em>market_cleanup</em> photos as they are ready.
               </p>
             </div>
 
@@ -1534,7 +1545,7 @@
                 <figcaption class="gallery-label"><span>Community</span> – Celebrating a cleaner shared space.</figcaption>
               </figure>
 
-              <!-- Updated spots for Ikeja & Eco Ambassadors series -->
+              <!-- Ikeja & Eco Ambassadors series -->
               <figure class="gallery-item">
                 <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup2b.jfif" alt="Ikeja underbridge cleanup in progress" />
                 <figcaption class="gallery-label"><span>Ikeja underbridge</span> – Cleanup in progress.</figcaption>
@@ -1571,9 +1582,7 @@
           <div class="team-layout">
             <article class="team-card">
               <div class="team-photo-frame">
-                <!-- Replace with: <img src="images/mofiyinfoluwa-odeyemi.jpg" alt="Portrait of Mofiyinfoluwa Odeyemi" /> -->
-                <div class="team-photo-placeholder-icon">👤</div>
-                <span style="position:absolute; bottom:0.5rem; left:0.7rem; font-size:0.7rem; color:var(--text-muted);">Add photo here</span>
+                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/Mofiyinfoluwa%20Odeyemi%20.jfif" alt="Portrait of Mofiyinfoluwa Odeyemi" />
               </div>
               <div class="team-role-tag">Project Lead</div>
               <div class="team-name">Mofiyinfoluwa Odeyemi (She/Her)</div>
@@ -1586,11 +1595,9 @@
 
             <article class="team-card">
               <div class="team-photo-frame">
-                <!-- Replace with: <img src="images/oluwatunmise-victory.jpg" alt="Portrait of Oluwatunmise Victory" /> -->
-                <div class="team-photo-placeholder-icon">👤</div>
-                <span style="position:absolute; bottom:0.5rem; left:0.7rem; font-size:0.7rem; color:var(--text-muted);">Add photo here</span>
+                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/Victory%20Oluwatunmise.jfif" alt="Portrait of Oluwatunmise Victory" />
               </div>
-              <div class="team-role-tag">Head of Programmes</div>
+              <div class="team-role-tag">Head of Program</div>
               <div class="team-name">Oluwatunmise Victory (She/Her)</div>
               <p class="team-bio">
                 A Public Health professional and CIPM‑certified practitioner focused on programme delivery and
@@ -1601,9 +1608,7 @@
 
             <article class="team-card">
               <div class="team-photo-frame">
-                <!-- Replace with: <img src="images/judah-moyin-jesu.jpg" alt="Portrait of Judah Moyin-Jesu" /> -->
-                <div class="team-photo-placeholder-icon">👤</div>
-                <span style="position:absolute; bottom:0.5rem; left:0.7rem; font-size:0.7rem; color:var(--text-muted);">Add photo here</span>
+                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/Judah%20Moyin-Jesu.jfif" alt="Portrait of Judah Moyin‑Jesu" />
               </div>
               <div class="team-role-tag">Monitoring & Evaluation Lead</div>
               <div class="team-name">Judah Moyin‑Jesu (He/Him)</div>
