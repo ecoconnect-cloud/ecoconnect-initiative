@@ -776,19 +776,18 @@
       background: #0f1d13;
       border: 1px solid rgba(255, 255, 255, 0.06);
       box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55);
-      min-height: 120px;
+      aspect-ratio: 4 / 3; /* consistent horizontal landscape cards */
     }
 
     .gallery-item img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      transform: scale(1.02);
+      object-fit: contain; /* show full image without cropping */
       transition: transform 260ms ease-out;
     }
 
     .gallery-item:hover img {
-      transform: scale(1.06);
+      transform: none; /* keep full image visible even on hover */
     }
 
     .gallery-label {
@@ -1523,34 +1522,34 @@
                 <figcaption class="gallery-label"><span>Ketu market</span> – Volunteer‑led cleanup drive.</figcaption>
               </figure>
               <figure class="gallery-item">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1c.jpg" alt="Traders sweeping and sorting waste" />
+                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1c.jpg" alt="Traders sweeping and sorting waste at Ketu market" />
                 <figcaption class="gallery-label"><span>Ketu market</span> – Traders sweeping and sorting waste.</figcaption>
               </figure>
               <figure class="gallery-item">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1d.jpg" alt="Volunteers leading a cleanup at Ketu market" />
-                <figcaption class="gallery-label"><span>Ketu market</span> – Volunteer‑led cleanup drive.</figcaption>
+                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1d.jpg" alt="Traders sweeping and sorting waste at Ketu market" />
+                <figcaption class="gallery-label"><span>Ketu market</span> – Traders sweeping and sorting waste.</figcaption>
               </figure>
               <figure class="gallery-item">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1a.jpg" alt="Group photo after cleanup" />
+                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1a.jpg" alt="Group photo after cleanup at Ketu market" />
                 <figcaption class="gallery-label"><span>Community</span> – Celebrating a cleaner shared space.</figcaption>
               </figure>
 
-              <!-- Reserved spots for market_cleanup2a–2d -->
+              <!-- Updated spots for Ikeja & Eco Ambassadors series -->
               <figure class="gallery-item">
-                <img src="images/market_cleanup2a.jpg" alt="Ikeja underbridge cleanup in progress" />
+                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup2b.jfif" alt="Ikeja underbridge cleanup in progress" />
                 <figcaption class="gallery-label"><span>Ikeja underbridge</span> – Cleanup in progress.</figcaption>
               </figure>
               <figure class="gallery-item">
-                <img src="images/market_cleanup2b.jpg" alt="Volunteers separating recyclables" />
-                <figcaption class="gallery-label"><span>Recycling</span> – Sorting and bagging recyclables.</figcaption>
+                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup2d.jfif" alt="Eco Ambassadors leading market sensitisation" />
+                <figcaption class="gallery-label"><span>Eco Ambassadors</span> – Youth leading market sensitisation.</figcaption>
               </figure>
               <figure class="gallery-item">
-                <img src="images/market_cleanup2c.jpg" alt="Before and after view of cleaned area" />
-                <figcaption class="gallery-label"><span>Before & after</span> – Reclaimed public space.</figcaption>
+                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup2c.jfif" alt="Traders cleaning up waste at Ikeja market" />
+                <figcaption class="gallery-label"><span>Ikeja market</span> – Traders cleaning up waste.</figcaption>
               </figure>
               <figure class="gallery-item">
-                <img src="images/market_cleanup2d.jpg" alt="Volunteers and traders in a reflection circle" />
-                <figcaption class="gallery-label"><span>Reflection</span> – Sharing lessons and next steps.</figcaption>
+                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup%202e.jpg" alt="Community celebrating a cleaner shared space" />
+                <figcaption class="gallery-label"><span>Community</span> – Celebrating a cleaner shared space.</figcaption>
               </figure>
             </div>
           </div>
