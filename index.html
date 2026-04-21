@@ -159,13 +159,31 @@
       box-shadow:0 26px 60px rgba(0,0,0,0.75);
       border:1px solid rgba(255,255,255,0.08);
     }
-    .mockup-dashboard { max-width:420px; margin-left:auto; transform: translateX(8%) translateY(-2%); }
-    .mockup-frame-inner { border-radius:1.7rem; overflow:hidden; background:#000; }
-    .mockup-frame-inner img { width:100%; height:100%; object-fit:cover; }
-    .mockup-caption {
-      margin-top:0.45rem; font-size:0.75rem; color:var(--text-muted);
-      display:flex; justify-content:space-between; align-items:center;
-    }
+.mockup-dashboard { max-width:420px; margin-left:auto; transform: translateX(8%) translateY(-2%); }
+
+.mockup-frame-inner,
+.app-mock-inner {
+  border-radius: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  overflow: hidden;
+  max-height: 640px;
+}
+
+.mockup-frame-inner img,
+.app-mock-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.mockup-caption {
+  margin-top:0.45rem; font-size:0.75rem; color:var(--text-muted);
+  display:flex; justify-content:space-between; align-items:center;
+}
     .pill-tag {
       display:inline-flex; align-items:center; gap:0.3rem; padding:0.12rem 0.6rem; border-radius:999px;
       background: rgba(50,74,48,0.9); border:1px solid rgba(245,247,241,0.25); font-size:0.68rem;
@@ -474,7 +492,7 @@
 
               <div class="mockup-dashboard">
   <div class="mockup-frame-inner">
-    <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/EcoConnect%20Dashboard%20Design%20Prototype.png" alt="EcoConnect dashboard mockup" />
+    <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/784547-%20EcoConnect%20Education%20And%20Action%20Initiative%20-%201.png" alt="EcoConnect dashboard mockup" />
   </div>
   <div class="mockup-caption">
     <span>Simple data view to guide early interventions</span>
@@ -775,7 +793,7 @@
               Follow the journey, support the work, or partner with us as we continue testing and strengthening the model.
             </p>
             <div class="hero-actions" style="justify-content:center;">
-              <a class="btn-primary" href="#gallery">See our work</a>
+            <a class="btn-primary" href="https://www.instagram.com/ecoconnect.initiative?igsh=MTVhd2R0aWJ2Y2c1Yw==" target="_blank" rel="noopener noreferrer">See our work</a>
               <a class="btn-ghost" href="mailto:info@ecoconnect.com.ng">Contact EcoConnect</a>
             </div>
           </div>
