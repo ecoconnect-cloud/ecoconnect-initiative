@@ -277,32 +277,100 @@
     .project-desc { font-size:0.9rem; color:var(--text-muted); }
     .project-meta { font-size:0.78rem; color:var(--accent-soft); }
 
-    .gallery-grid { margin-top:1.5rem; display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:0.9rem; }
-    .gallery-item {
-      position:relative; border-radius:1rem; overflow:hidden; background:#0f1d13;
-      border:1px solid rgba(255,255,255,0.06); box-shadow:0 14px 30px rgba(0,0,0,0.55); aspect-ratio:4/3;
-    }
-    .gallery-item img { width:100%; height:100%; object-fit:cover; }
-    .gallery-label {
-      position:absolute; inset:auto 0 0 0; padding:0.45rem 0.6rem;
-      background: linear-gradient(to top, rgba(3,8,5,0.9), transparent); font-size:0.7rem; color:var(--accent-soft);
-    }
-    .gallery-label span { font-weight:600; }
+.gallery-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
 
-    .team-layout { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:1.75rem; }
-    .team-card {
-      border-radius:var(--radius-xl); padding:1.4rem 1.3rem 1.4rem;
-      background: radial-gradient(circle at top left, rgba(216,195,138,0.12), rgba(17,32,21,0.98));
-      border:1px solid var(--border-subtle); box-shadow:0 18px 34px rgba(0,0,0,0.55);
-    }
-    .team-photo {
-      width:100%; aspect-ratio:4/4.2; border-radius:1rem; overflow:hidden; margin-bottom:1rem; background:#172519;
-      border:1px solid rgba(255,255,255,0.05);
-    }
-    .team-photo img { width:100%; height:100%; object-fit:cover; }
-    .team-card h3 { font-size:1rem; margin-bottom:0.15rem; }
-    .team-role { font-size:0.8rem; color:var(--accent-soft); margin-bottom:0.6rem; }
-    .team-card p { font-size:0.9rem; color:var(--text-muted); }
+.gallery-item {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #0f1d13;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55);
+  aspect-ratio: 4 / 3;
+  min-height: 250px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.gallery-label {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 0.55rem 0.7rem;
+  background: linear-gradient(to top, rgba(3, 8, 5, 0.92), transparent);
+  font-size: 0.74rem;
+  color: var(--accent-soft);
+}
+
+.gallery-label span {
+  font-weight: 700;
+}
+
+.team-layout {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+.team-card {
+  border-radius: var(--radius-xl);
+  padding: 1.4rem 1.3rem 1.4rem;
+  background: radial-gradient(circle at top left, rgba(216, 195, 138, 0.12), rgba(17, 32, 21, 0.98));
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.team-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1.05;
+  min-height: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background: #172519;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.team-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+.team-role {
+  font-size: 0.8rem;
+  color: var(--accent-soft);
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: auto;
+}
 
     .cta-panel {
       border-radius:var(--radius-xl); padding:2rem; text-align:center;
@@ -522,7 +590,7 @@
           <div class="approach-card">
             <h3>Seed-stage implementation focus</h3>
             <p class="body-text">
-              EcoConnect is currently in its early pilot phase. The immediate focus is to strengthen local trust, confirm waste hotspots,
+              EcoConnect is currently in its early pilot phase. The immediate focus is to establish waste hotspots,
               introduce simple reporting, work with local waste collectors, and build a practical foundation for safer disposal and waterway protection.
             </p>
             <div class="approach-pill-row">
@@ -613,66 +681,90 @@
           </div>
         </div>
       </section>
+      
+<section id="gallery">
+  <div class="max-width">
+    <div class="section-header">
+      <div class="section-kicker">Gallery</div>
+      <h2 class="section-title">Early field activity and community engagement</h2>
+      <p class="section-subtitle">
+        Images from our pilot cleanup activities and early community action.
+      </p>
+    </div>
 
-      <section id="gallery">
-        <div class="max-width">
-          <div class="section-header">
-            <div class="section-kicker">Gallery</div>
-            <h2 class="section-title">Early field activity and community engagement</h2>
-            <p class="section-subtitle">The second row has been removed for now. Additional images can be added later without changing the overall layout.</p>
-          </div>
+    <div class="gallery-grid">
+      <figure class="gallery-item">
+        <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1a.jpg" alt="EcoConnect Ketu cleanup activity 1" />
+        <figcaption class="gallery-label"><span>Ketu</span> • Community action</figcaption>
+      </figure>
 
-          <div class="gallery-grid">
-            <figure class="gallery-item">
-              <div class="placeholder">Ketu image 1</div>
-              <figcaption class="gallery-label"><span>Ketu</span> • Community action</figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <div class="placeholder">Ketu image 2</div>
-              <figcaption class="gallery-label"><span>Ketu</span> • Cleanup activity</figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <div class="placeholder">Ketu image 3</div>
-              <figcaption class="gallery-label"><span>Ketu</span> • Waste-affected area</figcaption>
-            </figure>
-            <figure class="gallery-item">
-              <div class="placeholder">Ketu image 4</div>
-              <figcaption class="gallery-label"><span>Ketu</span> • Early pilot work</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+      <figure class="gallery-item">
+        <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1c.jpg" alt="EcoConnect Ketu cleanup activity 2" />
+        <figcaption class="gallery-label"><span>Ketu</span> • Cleanup activity</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1d.jpg" alt="EcoConnect Ketu cleanup activity 3" />
+        <figcaption class="gallery-label"><span>Ketu</span> • Community participation</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/IMG_20240328_085001_88.jpg" alt="EcoConnect Ketu cleanup activity 4" />
+        <figcaption class="gallery-label"><span>Ketu</span> • clean up outcome</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
       <section id="team">
-        <div class="max-width">
-          <div class="section-header">
-            <div class="section-kicker">Team</div>
-            <h2 class="section-title">The people behind EcoConnect Initiative</h2>
-            <p class="section-subtitle">Add each team member’s photo above their write-up to keep the layout clean and consistent.</p>
-          </div>
+  <div class="max-width">
+    <div class="section-header">
+      <div class="section-kicker">Team</div>
+      <h2 class="section-title">The people behind EcoConnect Initiative</h2>
+      <p class="section-subtitle">
+        A youth-led team building practical solutions for waste management, waterway protection, and restoration.
+      </p>
+    </div>
 
-          <div class="team-layout">
-            <article class="team-card">
-              <div class="team-photo"><div class="placeholder">Team member photo</div></div>
-              <h3>Team Member Name</h3>
-              <div class="team-role">Team Lead</div>
-              <p>Write a short description of this team member’s role, experience, and contribution to EcoConnect Initiative here.</p>
-            </article>
-            <article class="team-card">
-              <div class="team-photo"><div class="placeholder">Team member photo</div></div>
-              <h3>Team Member Name</h3>
-              <div class="team-role">Operations / Partnerships</div>
-              <p>Write a short description of this team member’s role, experience, and contribution to EcoConnect Initiative here.</p>
-            </article>
-            <article class="team-card">
-              <div class="team-photo"><div class="placeholder">Team member photo</div></div>
-              <h3>Team Member Name</h3>
-              <div class="team-role">Community Engagement / Data</div>
-              <p>Write a short description of this team member’s role, experience, and contribution to EcoConnect Initiative here.</p>
-            </article>
-          </div>
+    <div class="team-layout">
+      <article class="team-card">
+        <div class="team-photo">
+          <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/Mofiyinfoluwa%20Odeyemi%20.jfif" alt="Mofiyinfoluwa Odeyemi" />
         </div>
-      </section>
+        <h3>Mofiyinfoluwa Odeyemi</h3>
+        <div class="team-role">Team Lead</div>
+        <p>
+          Leads the vision and coordination of EcoConnect Initiative, guiding community-based action on waste management,
+          environmental awareness, and local ecosystem restoration.
+        </p>
+      </article>
+
+      <article class="team-card">
+        <div class="team-photo">
+          <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/Victory%20Oluwatunmise.jfif" alt="Oluwatunmise Victory" />
+        </div>
+        <h3>Oluwatunmise Victory</h3>
+        <div class="team-role">Operations</div>
+        <p>
+          Supports operational planning and coordination, helping ensure activities, materials, and partnerships are
+          organized effectively for implementation in the community.
+        </p>
+      </article>
+
+      <article class="team-card">
+        <div class="team-photo">
+          <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/Judah%20Moyin-Jesu.jfif" alt="Judah Moyin-Jesu" />
+        </div>
+        <h3>Judah Moyin-Jesu</h3>
+        <div class="team-role">Community Engagement</div>
+        <p>
+          Supports community engagement and data, helping EcoConnect work closely with residents and strengthen
+          participation, and data monitoring in the communities.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
 
       <section id="contact">
         <div class="max-width">
@@ -684,7 +776,7 @@
             </p>
             <div class="hero-actions" style="justify-content:center;">
               <a class="btn-primary" href="#gallery">See our work</a>
-              <a class="btn-ghost" href="mailto:hello@ecoconnect.org">Contact EcoConnect</a>
+              <a class="btn-ghost" href="mailto:info@ecoconnect.com.ng">Contact EcoConnect</a>
             </div>
           </div>
         </div>
@@ -694,7 +786,7 @@
     <footer>
       <div class="max-width footer-row">
         <p>© 2026 EcoConnect Initiative. All rights reserved.</p>
-        <p>Youth-led • Waste management • Waterway protection • Restoration</p>
+        <p>Empowering communities for a greener future</p>
       </div>
     </footer>
   </div>
