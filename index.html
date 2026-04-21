@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdn.botpress.cloud/webchat/v3.4/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/11/30/16/20251130161731-GE7EHZWU.js" defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The EcoConnect Initiative – Empowering communities for a greener future</title>
-
-  <!-- Elegant, eco-inspired typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-
+  <title>EcoConnect Initiative – Cleaner communities, healthier waterways</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg-deep: #07130d;          /* deep forest */
-      --bg-olive: #233624;         /* olive base */
-      --bg-olive-soft: #2f4530;    /* slightly lighter olive */
-      --bg-accent-layer: #152016;  /* darker layer under cards */
-      --card-surface: #324a30;     /* main card */
-      --card-alt: #3c5a39;         /* alternate card */
-      --accent-seed: #d8c38a;      /* warm seed / highlight */
-      --accent-soft: #f4efe1;      /* very soft cream */
-      --accent-tag: #c58f5a;       /* warm tag / button */
+      --bg-deep: #07130d;
+      --bg-olive: #233624;
+      --bg-olive-soft: #2f4530;
+      --bg-accent-layer: #152016;
+      --card-surface: #324a30;
+      --card-alt: #3c5a39;
+      --accent-seed: #d8c38a;
+      --accent-soft: #f4efe1;
+      --accent-tag: #c58f5a;
       --text-main: #f5f7f1;
       --text-muted: #c3d3c0;
-      --border-subtle: rgba(255, 255, 255, 0.08);
-      --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.45);
+      --border-subtle: rgba(255,255,255,0.08);
+      --shadow-soft: 0 20px 40px rgba(0,0,0,0.45);
       --radius-xl: 1.75rem;
       --radius-lg: 1.25rem;
       --radius-pill: 999px;
@@ -33,1176 +28,389 @@
       --nav-height: 74px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: 'DM Sans', system-ui, sans-serif;
       background: radial-gradient(circle at top left, #1e2f23 0, #07130d 48%, #050c08 100%);
       color: var(--text-main);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
 
     .page-shell {
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
       background:
-        radial-gradient(circle at top left, rgba(216, 195, 138, 0.14), transparent 55%),
-        radial-gradient(circle at bottom right, rgba(119, 170, 129, 0.22), transparent 60%),
+        radial-gradient(circle at top left, rgba(216,195,138,0.14), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(119,170,129,0.22), transparent 60%),
         linear-gradient(145deg, var(--bg-deep), var(--bg-olive));
     }
 
-    .max-width {
-      width: 100%;
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
+    .max-width { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
 
-    /* --- Header & Navigation --- */
     header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
+      position: sticky; top: 0; z-index: 50;
       backdrop-filter: blur(18px);
-      background: linear-gradient(to bottom, rgba(7, 19, 13, 0.9), rgba(7, 19, 13, 0.7));
-      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      background: linear-gradient(to bottom, rgba(7,19,13,0.92), rgba(7,19,13,0.72));
+      border-bottom: 1px solid rgba(255,255,255,0.03);
     }
 
     .nav {
       height: var(--nav-height);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
+      display: flex; align-items: center; justify-content: space-between; gap: 2rem;
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-
+    .brand { display: flex; align-items: center; gap: 0.8rem; }
     .brand-mark {
-      width: 36px;
-      height: 36px;
-      border-radius: 1.4rem;
+      width: 42px; height: 42px; border-radius: 1.4rem;
       background: conic-gradient(from 160deg, #d8c38a, #78a46b, #324a30, #d8c38a);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.5);
-      overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 12px 26px rgba(0,0,0,0.5); overflow: hidden;
     }
-
-    .brand-mark img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: inherit;
-    }
-
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      gap: 0.1rem;
-    }
-
+    .brand-mark img { width: 100%; height: 100%; object-fit: cover; }
     .brand-text h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 1.25rem;
-      letter-spacing: 0.04em;
+      font-size: 1.18rem; letter-spacing: 0.03em;
     }
-
     .brand-text span {
-      font-size: 0.68rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--text-muted);
+      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-muted);
     }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      font-size: 0.9rem;
-    }
-
+    .nav-links { display: flex; align-items: center; gap: 1.3rem; font-size: 0.9rem; }
     .nav-links a {
-      position: relative;
-      padding: 0.2rem 0;
-      color: var(--text-muted);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      font-weight: 500;
+      position: relative; padding: 0.2rem 0; color: var(--text-muted);
+      letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500;
     }
-
     .nav-links a::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -0.25rem;
-      width: 0;
-      height: 2px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--accent-seed), #9ac783);
+      content: ''; position: absolute; left: 0; bottom: -0.25rem; width: 0; height: 2px;
+      border-radius: 999px; background: linear-gradient(90deg, var(--accent-seed), #9ac783);
       transition: width var(--transition-med);
     }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
+    .nav-links a:hover::after { width: 100%; }
 
     .nav-cta {
-      padding: 0.5rem 1rem;
-      border-radius: var(--radius-pill);
+      padding: 0.5rem 1rem; border-radius: var(--radius-pill);
       background: radial-gradient(circle at top left, #f4efe1, #d8c38a);
-      color: #1b261b;
-      font-size: 0.85rem;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.55);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+      color: #1b261b; font-size: 0.85rem; font-weight: 600;
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      box-shadow: 0 12px 26px rgba(0,0,0,0.55);
+      border: 1px solid rgba(255,255,255,0.4);
     }
 
-    .nav-cta span {
-      font-size: 1.1rem;
-    }
+    section { padding: 3rem 0; }
 
-    .nav-cta:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 18px 34px rgba(0, 0, 0, 0.6);
-      background: radial-gradient(circle at top left, #ffffff, #e4d4a4);
-    }
-
-    .nav-toggle {
-      display: none;
-      width: 40px;
-      height: 40px;
-      border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      background: rgba(7, 19, 13, 0.9);
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
-
-    .nav-toggle span {
-      width: 18px;
-      height: 2px;
-      background: var(--text-main);
-      border-radius: 999px;
-      position: relative;
-    }
-
-    .nav-toggle span::before,
-    .nav-toggle span::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      width: 18px;
-      height: 2px;
-      background: var(--text-main);
-      border-radius: 999px;
-    }
-
-    .nav-toggle span::before {
-      top: -6px;
-    }
-
-    .nav-toggle span::after {
-      top: 6px;
-    }
-
-    /* --- Hero --- */
-    .hero {
-      padding: 3.5rem 0 3rem;
-    }
-
+    .hero { padding: 3.5rem 0 3rem; }
     .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-      gap: 2.75rem;
-      align-items: center;
+      display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 2.75rem; align-items: center;
     }
-
     .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.2rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.17);
-      background: linear-gradient(120deg, rgba(50, 74, 48, 0.8), rgba(7, 19, 13, 0.6));
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      margin-bottom: 1.2rem;
+      display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.2rem 0.7rem;
+      border-radius: 999px; border: 1px solid rgba(255,255,255,0.17);
+      background: linear-gradient(120deg, rgba(50,74,48,0.8), rgba(7,19,13,0.6));
+      font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1.2rem;
     }
-
     .eyebrow-dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, #ffffff, #d8c38a);
-      box-shadow: 0 0 0 4px rgba(216, 195, 138, 0.18);
+      width: 9px; height: 9px; border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #fff, #d8c38a);
+      box-shadow: 0 0 0 4px rgba(216,195,138,0.18);
     }
-
     .hero h2 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(2.4rem, 3vw, 3rem);
-      line-height: 1.1;
-      margin-bottom: 1rem;
+      font-size: clamp(2.4rem, 3vw, 3rem); line-height: 1.1; margin-bottom: 1rem;
     }
-
     .hero-highlight {
       background: linear-gradient(120deg, #f4efe1, #e4d3a6, #c3df9f);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      -webkit-background-clip: text; background-clip: text; color: transparent;
     }
+    .hero p { max-width: 34rem; color: var(--text-muted); font-size: 0.98rem; margin-bottom: 1.6rem; }
 
-    .hero p {
-      max-width: 34rem;
-      color: var(--text-muted);
-      font-size: 0.98rem;
-      margin-bottom: 1.6rem;
-    }
-
-    .hero-metrics {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.1rem;
-      margin-bottom: 2rem;
-    }
-
+    .hero-metrics { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
     .metric {
-      padding: 0.75rem 1rem;
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      background: radial-gradient(circle at top left, rgba(248, 244, 228, 0.09), rgba(8, 21, 12, 0.95));
-      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.4);
-      min-width: 140px;
+      padding: 0.75rem 1rem; border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.06);
+      background: radial-gradient(circle at top left, rgba(248,244,228,0.09), rgba(8,21,12,0.95));
+      box-shadow: 0 10px 26px rgba(0,0,0,0.4); min-width: 140px;
     }
+    .metric-main { display:block; font-weight:600; font-size:1.05rem; }
+    .metric-label { display:block; font-size:0.78rem; color:var(--text-muted); }
 
-    .metric span {
-      display: block;
+    .hero-actions { display:flex; flex-wrap:wrap; gap:0.9rem; align-items:center; }
+    .btn-primary, .btn-ghost {
+      display:inline-flex; align-items:center; gap:0.4rem;
+      padding:0.78rem 1.35rem; border-radius:var(--radius-pill);
+      font-size:0.9rem; font-weight:600; border:1px solid transparent;
     }
-
-    .metric-main {
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-
-    .metric-label {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      align-items: center;
-    }
-
-    .btn-primary,
-    .btn-ghost {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.78rem 1.35rem;
-      border-radius: var(--radius-pill);
-      font-size: 0.9rem;
-      font-weight: 600;
-      cursor: pointer;
-      border: 1px solid transparent;
-      transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
-      text-decoration: none;
-    }
-
     .btn-primary {
       background: radial-gradient(circle at top left, #f9f5ea, #d8c38a);
-      color: #1a2418;
-      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.55);
+      color:#1a2418; box-shadow:0 16px 30px rgba(0,0,0,0.55);
     }
+    .btn-ghost { background:transparent; color:var(--text-main); border-color:rgba(245,247,241,0.4); }
 
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 22px 40px rgba(0, 0, 0, 0.65);
-      background: radial-gradient(circle at top left, #ffffff, #e5d5a6);
-    }
-
-    .btn-ghost {
-      background: transparent;
-      color: var(--text-main);
-      border-color: rgba(245, 247, 241, 0.4);
-    }
-
-    .btn-ghost:hover {
-      background: rgba(50, 74, 48, 0.9);
-      border-color: rgba(245, 247, 241, 0.7);
-      transform: translateY(-1px);
-    }
-
-    .btn-icon {
-      font-size: 1.1rem;
-    }
-
-    /* Hero: App mockup column */
-    .hero-visual-wrapper {
-      position: relative;
-    }
-
+    .hero-visual-wrapper { position: relative; }
     .hero-visual-layer {
-      position: absolute;
-      inset: 10%;
-      background: radial-gradient(circle at top, rgba(248, 244, 228, 0.12), transparent 60%);
-      filter: blur(30px);
-      opacity: 0.95;
-      z-index: 0;
+      position:absolute; inset:10%; background: radial-gradient(circle at top, rgba(248,244,228,0.12), transparent 60%);
+      filter: blur(30px); opacity:0.95; z-index:0;
     }
-
-    .hero-visual-card {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      gap: 1.2rem;
+    .hero-visual-card { position:relative; z-index:1; display:grid; gap:1.2rem; }
+    .mockup-phone, .mockup-dashboard {
+      border-radius:2rem; padding:0.7rem; background:linear-gradient(145deg, #020806, #19271b);
+      box-shadow:0 26px 60px rgba(0,0,0,0.75);
+      border:1px solid rgba(255,255,255,0.08);
     }
-
-    .mockup-phone,
-    .mockup-dashboard {
-      border-radius: 2rem;
-      padding: 0.7rem;
-      background: linear-gradient(145deg, #020806, #19271b);
-      box-shadow: 0 26px 60px rgba(0, 0, 0, 0.75);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .mockup-dashboard {
-      max-width: 420px;
-      margin-left: auto;
-      transform: translateX(8%) translateY(-2%);
-    }
-
-    .mockup-frame-inner {
-      border-radius: 1.7rem;
-      overflow: hidden;
-      background: #000;
-    }
-
+    .mockup-dashboard { max-width:420px; margin-left:auto; transform: translateX(8%) translateY(-2%); }
+    .mockup-frame-inner { border-radius:1.7rem; overflow:hidden; background:#000; }
+    .mockup-frame-inner img { width:100%; height:100%; object-fit:cover; }
     .mockup-caption {
-      margin-top: 0.45rem;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      margin-top:0.45rem; font-size:0.75rem; color:var(--text-muted);
+      display:flex; justify-content:space-between; align-items:center;
     }
-
     .pill-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      padding: 0.12rem 0.6rem;
-      border-radius: 999px;
-      background: rgba(50, 74, 48, 0.9);
-      border: 1px solid rgba(245, 247, 241, 0.25);
-      font-size: 0.68rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
+      display:inline-flex; align-items:center; gap:0.3rem; padding:0.12rem 0.6rem; border-radius:999px;
+      background: rgba(50,74,48,0.9); border:1px solid rgba(245,247,241,0.25); font-size:0.68rem;
+      text-transform:uppercase; letter-spacing:0.12em;
     }
 
-    .pill-tag span {
-      font-size: 0.7rem;
-    }
-
-    /* --- Section Layout --- */
-    main {
-      padding-bottom: 4rem;
-    }
-
-    section {
-      padding: 3rem 0;
-    }
-
-    .section-header {
-      margin-bottom: 2rem;
-      max-width: 40rem;
-    }
-
+    .section-header { margin-bottom:2rem; max-width:40rem; }
     .section-kicker {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: var(--text-muted);
-      margin-bottom: 0.5rem;
+      font-size:0.75rem; text-transform:uppercase; letter-spacing:0.18em; color:var(--text-muted); margin-bottom:0.5rem;
     }
+    .section-title { font-family:'Playfair Display', serif; font-size:1.8rem; margin-bottom:0.4rem; }
+    .section-subtitle { font-size:0.95rem; color:var(--text-muted); }
 
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .section-subtitle {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-
-    /* Card shell that floats above an accent layer */
-    .card-layered {
-      position: relative;
-    }
-
+    .card-layered { position:relative; }
     .card-layered::before {
-      content: '';
-      position: absolute;
-      inset: 10px -10px -10px 10px;
-      border-radius: var(--radius-xl);
-      background: radial-gradient(circle at bottom right, rgba(216, 195, 138, 0.22), transparent 55%);
-      opacity: 0.9;
-      z-index: 0;
-      filter: blur(12px);
+      content:''; position:absolute; inset:10px -10px -10px 10px; border-radius:var(--radius-xl);
+      background: radial-gradient(circle at bottom right, rgba(216,195,138,0.22), transparent 55%);
+      opacity:0.9; z-index:0; filter:blur(12px);
     }
-
     .card-main {
-      position: relative;
-      z-index: 1;
-      border-radius: var(--radius-xl);
-      background: radial-gradient(circle at top left, rgba(248, 244, 228, 0.08), rgba(7, 19, 13, 0.98));
-      border: 1px solid var(--border-subtle);
-      box-shadow: var(--shadow-soft);
-      padding: 2rem 2rem 1.8rem;
+      position:relative; z-index:1; border-radius:var(--radius-xl);
+      background: radial-gradient(circle at top left, rgba(248,244,228,0.08), rgba(7,19,13,0.98));
+      border:1px solid var(--border-subtle); box-shadow:var(--shadow-soft); padding:2rem 2rem 1.8rem;
     }
 
-    .two-column {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .body-text {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-
-    .body-text p + p {
-      margin-top: 0.9rem;
-    }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-top: 1.2rem;
-    }
-
+    .two-column { display:grid; gap:2rem; grid-template-columns:repeat(2, minmax(0,1fr)); }
+    .body-text { font-size:0.95rem; color:var(--text-muted); }
+    .body-text p + p { margin-top:0.9rem; }
+    .badge-row { display:flex; flex-wrap:wrap; gap:0.6rem; margin-top:1.2rem; }
     .soft-badge {
-      padding: 0.28rem 0.7rem;
-      border-radius: 999px;
-      font-size: 0.78rem;
-      border: 1px solid rgba(232, 222, 190, 0.35);
-      background: rgba(29, 45, 30, 0.9);
-      color: var(--accent-soft);
+      padding:0.28rem 0.7rem; border-radius:999px; font-size:0.78rem;
+      border:1px solid rgba(232,222,190,0.35); background:rgba(29,45,30,0.9); color:var(--accent-soft);
     }
 
-    /* --- Problem & Motivation --- */
-    .stacked-cards {
-      display: grid;
-      gap: 1.75rem;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
+    .stacked-cards { display:grid; gap:1.75rem; grid-template-columns:repeat(3, minmax(0,1fr)); }
     .stacked-card {
-      border-radius: var(--radius-lg);
-      padding: 1.4rem 1.4rem 1.3rem;
-      background: radial-gradient(circle at top left, rgba(216, 195, 138, 0.1), rgba(19, 37, 23, 0.98));
-      border: 1px solid var(--border-subtle);
-      box-shadow: 0 18px 34px rgba(0, 0, 0, 0.5);
+      border-radius:var(--radius-lg); padding:1.4rem 1.4rem 1.3rem;
+      background: radial-gradient(circle at top left, rgba(216,195,138,0.1), rgba(19,37,23,0.98));
+      border:1px solid var(--border-subtle); box-shadow:0 18px 34px rgba(0,0,0,0.5);
     }
-
-    .stacked-card h3 {
-      font-size: 1.02rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .stacked-card p {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
+    .stacked-card h3 { font-size:1.02rem; margin-bottom:0.5rem; }
+    .stacked-card p { font-size:0.9rem; color:var(--text-muted); }
     .chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.18rem 0.55rem;
-      border-radius: 999px;
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: var(--text-muted);
-      margin-bottom: 0.7rem;
+      display:inline-flex; align-items:center; gap:0.35rem; padding:0.18rem 0.55rem; border-radius:999px;
+      font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; border:1px solid rgba(255,255,255,0.2);
+      color:var(--text-muted); margin-bottom:0.7rem;
     }
-
     .chip-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
-      background: linear-gradient(130deg, var(--accent-seed), #74a268);
+      width:7px; height:7px; border-radius:999px; background:linear-gradient(130deg, var(--accent-seed), #74a268);
     }
 
-    /* --- Beneficiaries & Approach --- */
-    .benefit-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
-      gap: 2rem;
-      align-items: flex-start;
-    }
-
-    .benefit-list {
-      list-style: none;
-      display: grid;
-      gap: 1.25rem;
-    }
-
-    .benefit-item {
-      display: grid;
-      grid-template-columns: auto minmax(0, 1fr);
-      gap: 0.75rem 0.9rem;
-      align-items: flex-start;
-    }
-
+    .benefit-grid { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,0.95fr); gap:2rem; align-items:flex-start; }
+    .benefit-list { list-style:none; display:grid; gap:1.25rem; }
+    .benefit-item { display:grid; grid-template-columns:auto minmax(0,1fr); gap:0.75rem 0.9rem; align-items:flex-start; }
     .benefit-icon {
-      width: 34px;
-      height: 34px;
-      border-radius: 999px;
-      background: radial-gradient(circle at top left, rgba(216, 195, 138, 0.75), rgba(50, 74, 48, 0.9));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-      color: #1b261b;
-      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.55);
+      width:34px; height:34px; border-radius:999px;
+      background: radial-gradient(circle at top left, rgba(216,195,138,0.75), rgba(50,74,48,0.9));
+      display:flex; align-items:center; justify-content:center; font-size:0.9rem; color:#1b261b;
+      box-shadow:0 10px 22px rgba(0,0,0,0.55);
     }
-
-    .benefit-item h3 {
-      font-size: 0.98rem;
-      margin-bottom: 0.15rem;
-    }
-
-    .benefit-item p {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
+    .benefit-item h3 { font-size:0.98rem; margin-bottom:0.15rem; }
+    .benefit-item p { font-size:0.9rem; color:var(--text-muted); }
 
     .approach-card {
-      border-radius: var(--radius-xl);
-      padding: 1.75rem 1.8rem 1.5rem;
-      background: linear-gradient(145deg, #1a271c, #2f4530);
-      border: 1px solid rgba(205, 191, 144, 0.45);
-      box-shadow: 0 22px 40px rgba(0, 0, 0, 0.65);
+      border-radius:var(--radius-xl); padding:1.75rem 1.8rem 1.5rem;
+      background:linear-gradient(145deg, #1a271c, #2f4530);
+      border:1px solid rgba(205,191,144,0.45); box-shadow:0 22px 40px rgba(0,0,0,0.65);
     }
-
-    .approach-card h3 {
-      font-size: 1rem;
-      margin-bottom: 0.7rem;
-    }
-
-    .approach-pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.7rem;
-    }
-
+    .approach-card h3 { font-size:1rem; margin-bottom:0.7rem; }
+    .approach-pill-row { display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.7rem; }
     .approach-pill {
-      border-radius: 999px;
-      padding: 0.2rem 0.6rem;
-      font-size: 0.78rem;
-      border: 1px solid rgba(245, 247, 241, 0.36);
-      background: rgba(14, 28, 20, 0.9);
-      color: var(--accent-soft);
+      border-radius:999px; padding:0.2rem 0.6rem; font-size:0.78rem;
+      border:1px solid rgba(245,247,241,0.36); background:rgba(14,28,20,0.9); color:var(--accent-soft);
     }
 
-    /* --- App Experience / Dashboard --- */
-    .app-section {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.05fr);
-      gap: 2.4rem;
-      align-items: center;
-    }
-
-    .app-copy p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      margin-bottom: 1rem;
-    }
-
-    .feature-list {
-      list-style: none;
-      display: grid;
-      gap: 0.7rem;
-      margin-top: 0.7rem;
-    }
-
-    .feature-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.6rem;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
+    .app-section { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1.05fr); gap:2.4rem; align-items:center; }
+    .app-copy p { font-size:0.95rem; color:var(--text-muted); margin-bottom:1rem; }
+    .feature-list { list-style:none; display:grid; gap:0.7rem; margin-top:0.7rem; }
+    .feature-list li { display:flex; align-items:flex-start; gap:0.6rem; font-size:0.9rem; color:var(--text-muted); }
     .feature-bullet {
-      margin-top: 0.25rem;
-      width: 11px;
-      height: 11px;
-      border-radius: 999px;
-      background: radial-gradient(circle at 30% 30%, #ffffff, #9ac783);
-      box-shadow: 0 0 0 4px rgba(154, 199, 131, 0.23);
+      margin-top:0.25rem; width:11px; height:11px; border-radius:999px;
+      background: radial-gradient(circle at 30% 30%, #ffffff, #9ac783); box-shadow:0 0 0 4px rgba(154,199,131,0.23);
     }
-
-    .app-mockup-stack {
-      position: relative;
-      display: grid;
-      gap: 1.1rem;
-    }
-
+    .app-mockup-stack { position:relative; display:grid; gap:1.1rem; }
     .app-mockup-stack::before {
-      content: '';
-      position: absolute;
-      inset: 8% 5% 0;
-      background: radial-gradient(circle at top, rgba(216, 195, 138, 0.22), transparent 60%);
-      filter: blur(25px);
-      opacity: 0.9;
-      z-index: 0;
+      content:''; position:absolute; inset:8% 5% 0; background: radial-gradient(circle at top, rgba(216,195,138,0.22), transparent 60%);
+      filter:blur(25px); opacity:0.9; z-index:0;
     }
-
     .app-mock-card {
-      position: relative;
-      z-index: 1;
-      border-radius: 1.7rem;
-      padding: 0.7rem;
-      background: linear-gradient(135deg, #020604, #19271b);
-      box-shadow: 0 26px 60px rgba(0, 0, 0, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      position:relative; z-index:1; border-radius:1.7rem; padding:0.7rem;
+      background: linear-gradient(135deg, #020604, #19271b); box-shadow:0 26px 60px rgba(0,0,0,0.8);
+      border:1px solid rgba(255,255,255,0.08);
     }
-
-    .app-mock-inner {
-      border-radius: 1.4rem;
-      overflow: hidden;
-      background: #000;
-    }
-
-    .app-mock-inner img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
+    .app-mock-inner { border-radius:1.4rem; overflow:hidden; background:#000; min-height:280px; }
+    .app-mock-inner img { width:100%; height:100%; object-fit:cover; }
     .app-mock-label {
-      margin-top: 0.4rem;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 0.75rem;
+      margin-top:0.4rem; font-size:0.75rem; color:var(--text-muted);
+      display:flex; justify-content:space-between; align-items:center; gap:0.75rem;
     }
 
-    /* --- Projects & Gallery --- */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.75rem;
-    }
-
+    .projects-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:1.75rem; }
     .project-card {
-      border-radius: var(--radius-lg);
-      padding: 1.6rem 1.5rem 1.4rem;
-      background: radial-gradient(circle at top left, rgba(154, 199, 131, 0.18), rgba(17, 32, 21, 0.98));
-      border: 1px solid var(--border-subtle);
-      box-shadow: 0 18px 34px rgba(0, 0, 0, 0.55);
-      display: grid;
-      gap: 0.75rem;
+      border-radius:var(--radius-lg); padding:1.6rem 1.5rem 1.4rem;
+      background: radial-gradient(circle at top left, rgba(154,199,131,0.18), rgba(17,32,21,0.98));
+      border:1px solid var(--border-subtle); box-shadow:0 18px 34px rgba(0,0,0,0.55); display:grid; gap:0.75rem;
     }
+    .project-tag { font-size:0.72rem; text-transform:uppercase; letter-spacing:0.18em; color:var(--text-muted); }
+    .project-title { font-size:1rem; font-weight:600; }
+    .project-desc { font-size:0.9rem; color:var(--text-muted); }
+    .project-meta { font-size:0.78rem; color:var(--accent-soft); }
 
-    .project-tag {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: var(--text-muted);
-    }
-
-    .project-title {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    .project-desc {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
-    .project-meta {
-      font-size: 0.78rem;
-      color: var(--accent-soft);
-    }
-
-    .gallery-grid {
-      margin-top: 1.5rem;
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 0.9rem;
-    }
-
+    .gallery-grid { margin-top:1.5rem; display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:0.9rem; }
     .gallery-item {
-      position: relative;
-      border-radius: 1rem;
-      overflow: hidden;
-      background: #0f1d13;
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55);
-      aspect-ratio: 4 / 3; /* consistent horizontal landscape cards */
+      position:relative; border-radius:1rem; overflow:hidden; background:#0f1d13;
+      border:1px solid rgba(255,255,255,0.06); box-shadow:0 14px 30px rgba(0,0,0,0.55); aspect-ratio:4/3;
     }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; /* show full image without cropping */
-      transition: transform 260ms ease-out;
-    }
-
-    .gallery-item:hover img {
-      transform: none; /* keep full image visible even on hover */
-    }
-
+    .gallery-item img { width:100%; height:100%; object-fit:cover; }
     .gallery-label {
-      position: absolute;
-      inset: auto 0 0 0;
-      padding: 0.45rem 0.6rem;
-      background: linear-gradient(to top, rgba(3, 8, 5, 0.9), transparent);
-      font-size: 0.7rem;
-      color: var(--accent-soft);
+      position:absolute; inset:auto 0 0 0; padding:0.45rem 0.6rem;
+      background: linear-gradient(to top, rgba(3,8,5,0.9), transparent); font-size:0.7rem; color:var(--accent-soft);
     }
+    .gallery-label span { font-weight:600; }
 
-    .gallery-label span {
-      font-weight: 600;
-    }
-
-    /* --- Team --- */
-    .team-layout {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.75rem;
-    }
-
+    .team-layout { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:1.75rem; }
     .team-card {
-      border-radius: var(--radius-xl);
-      padding: 1.4rem 1.3rem 1.4rem;
-      background: radial-gradient(circle at top left, rgba(216, 195, 138, 0.12), rgba(17, 32, 21, 0.98));
-      border: 1px solid var(--border-subtle);
-      box-shadow: 0 18px 34px rgba(0, 0, 0, 0.5);
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
+      border-radius:var(--radius-xl); padding:1.4rem 1.3rem 1.4rem;
+      background: radial-gradient(circle at top left, rgba(216,195,138,0.12), rgba(17,32,21,0.98));
+      border:1px solid var(--border-subtle); box-shadow:0 18px 34px rgba(0,0,0,0.55);
     }
+    .team-photo {
+      width:100%; aspect-ratio:4/4.2; border-radius:1rem; overflow:hidden; margin-bottom:1rem; background:#172519;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+    .team-photo img { width:100%; height:100%; object-fit:cover; }
+    .team-card h3 { font-size:1rem; margin-bottom:0.15rem; }
+    .team-role { font-size:0.8rem; color:var(--accent-soft); margin-bottom:0.6rem; }
+    .team-card p { font-size:0.9rem; color:var(--text-muted); }
 
-    .team-photo-frame {
-      border-radius: 1.3rem;
-      overflow: hidden;
-      background: linear-gradient(135deg, #122116, #263928);
-      aspect-ratio: 4 / 3;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-      font-size: 0.8rem;
+    .cta-panel {
+      border-radius:var(--radius-xl); padding:2rem; text-align:center;
+      background: linear-gradient(145deg, rgba(216,195,138,0.18), rgba(25,39,28,0.96));
+      border:1px solid rgba(216,195,138,0.28); box-shadow:0 22px 40px rgba(0,0,0,0.65);
     }
-
-    .team-photo-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .team-role-tag {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-muted);
-    }
-
-    .team-name {
-      font-weight: 600;
-      font-size: 0.98rem;
-    }
-
-    .team-bio {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-    }
-
-    /* --- Eco Blog Teaser --- */
-    .blog-banner {
-      border-radius: var(--radius-xl);
-      padding: 1.8rem 1.7rem 1.7rem;
-      background: radial-gradient(circle at top left, rgba(154, 199, 131, 0.22), rgba(12, 24, 17, 0.98));
-      border: 1px solid rgba(213, 199, 153, 0.55);
-      box-shadow: 0 22px 40px rgba(0, 0, 0, 0.65);
-      display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
-      gap: 1.8rem;
-      align-items: center;
-    }
-
-    .blog-banner h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .blog-banner p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-
-    .blog-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.3rem 0.7rem;
-      border-radius: 999px;
-      font-size: 0.78rem;
-      border: 1px solid rgba(245, 247, 241, 0.5);
-      background: rgba(7, 19, 13, 0.92);
-      margin-bottom: 0.7rem;
-    }
-
-    .blog-stat {
-      font-size: 0.78rem;
-      color: var(--accent-soft);
-    }
-
-    /* --- Get Involved & Contact --- */
-    .involved-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-      gap: 2.2rem;
-      align-items: flex-start;
-    }
-
-    .engage-cards {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.1rem;
-    }
-
-    .engage-card {
-      border-radius: 1.3rem;
-      padding: 1.2rem 1.1rem 1.1rem;
-      background: radial-gradient(circle at top left, rgba(216, 195, 138, 0.12), rgba(17, 32, 21, 0.98));
-      border: 1px solid var(--border-subtle);
-      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
-      font-size: 0.88rem;
-    }
-
-    .engage-card h3 {
-      font-size: 0.94rem;
-      margin-bottom: 0.3rem;
-    }
-
-    .engage-chip {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-muted);
-      margin-bottom: 0.4rem;
-    }
-
-    .contact-card {
-      border-radius: var(--radius-xl);
-      padding: 1.6rem 1.6rem 1.5rem;
-      background: radial-gradient(circle at top left, rgba(154, 199, 131, 0.16), rgba(10, 22, 15, 0.98));
-      border: 1px solid rgba(224, 211, 173, 0.6);
-      box-shadow: 0 20px 38px rgba(0, 0, 0, 0.6);
-      font-size: 0.9rem;
-    }
-
-    .contact-row {
-      display: grid;
-      grid-template-columns: auto minmax(0, 1fr);
-      gap: 0.5rem 0.7rem;
-      margin-top: 0.7rem;
-      align-items: center;
-    }
-
-    .contact-label {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    .contact-value {
-      font-size: 0.94rem;
-      font-weight: 500;
-    }
+    .cta-panel h3 { font-family:'Playfair Display', serif; font-size:1.7rem; margin-bottom:0.6rem; }
+    .cta-panel p { max-width:42rem; margin:0 auto 1.1rem; color:var(--text-muted); }
 
     footer {
-      padding: 2rem 0 2.3rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
-      margin-top: 2rem;
+      padding:2rem 0 2.5rem; color:var(--text-muted); border-top:1px solid rgba(255,255,255,0.05);
+      background: linear-gradient(to top, rgba(4,10,7,0.95), rgba(4,10,7,0.45));
+    }
+    .footer-row { display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+    .footer-row p { font-size:0.85rem; }
+
+    .placeholder {
+      min-height: 100%; display:flex; align-items:center; justify-content:center; text-align:center; padding:1rem;
+      color:#dfe7de; background: linear-gradient(135deg, #203022, #344a36); font-size:0.92rem;
     }
 
-    .footer-inner {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.8rem;
-      color: var(--text-muted);
+    @media (max-width: 960px) {
+      .hero-grid, .two-column, .benefit-grid, .app-section, .projects-grid, .team-layout, .stacked-cards {
+        grid-template-columns: 1fr;
+      }
+      .gallery-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .mockup-dashboard { margin-left:0; transform:none; max-width:none; }
+      .nav-links { display:none; }
     }
 
-    .footer-inner a {
-      text-decoration: underline;
-      text-decoration-color: rgba(245, 247, 241, 0.4);
-      text-underline-offset: 3px;
-    }
-
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    /* --- Responsive --- */
-    @media (max-width: 900px) {
-      .nav-links {
-        position: fixed;
-        inset: var(--nav-height) 0 auto;
-        background: radial-gradient(circle at top, rgba(19, 35, 25, 0.98), rgba(7, 19, 13, 0.98));
-        padding: 1rem 1.5rem 1.3rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        transform: translateY(-130%);
-        opacity: 0;
-        pointer-events: none;
-        transition: transform var(--transition-med), opacity var(--transition-med);
-      }
-
-      .nav-links.nav-open {
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: auto;
-      }
-
-      .nav-links-row {
-        display: flex;
-        flex-direction: column;
-        gap: 0.9rem;
-        margin-bottom: 0.8rem;
-      }
-
-      .nav-cta {
-        width: 100%;
-        justify-content: center;
-      }
-
-      .nav-toggle {
-        display: inline-flex;
-      }
-
-      .hero {
-        padding-top: 2.6rem;
-      }
-
-      .hero-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .mockup-dashboard {
-        max-width: 360px;
-        transform: translateX(4%) translateY(-2%);
-      }
-
-      .two-column,
-      .benefit-grid,
-      .app-section,
-      .blog-banner,
-      .involved-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .stacked-cards {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .projects-grid,
-      .team-layout,
-      .engage-cards {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .gallery-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 680px) {
-      .projects-grid,
-      .team-layout,
-      .engage-cards {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .gallery-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .card-main {
-        padding: 1.6rem 1.4rem 1.5rem;
-      }
-
-      .hero-actions {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .metric {
-        min-width: 46%;
-      }
+    @media (max-width: 640px) {
+      .hero h2 { font-size: 2.15rem; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .max-width { padding: 0 1rem; }
+      .card-main, .cta-panel { padding: 1.35rem; }
     }
   </style>
 </head>
-
 <body>
   <div class="page-shell">
     <header>
       <div class="max-width nav">
-        <a href="#top" class="brand">
+        <div class="brand">
           <div class="brand-mark">
-            <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/ChatGPT%20Image%20Nov%2030%2C%202025%2C%2005_01_35%20PM.png" alt="The EcoConnect Initiative logo" />
+            <img src="/mnt/data/331632.png" alt="EcoConnect Initiative logo" />
           </div>
           <div class="brand-text">
-            <h1>The EcoConnect Initiative</h1>
-            <span>Empowering communities for a greener future</span>
+            <h1>EcoConnect Initiative</h1>
+            <span>Waste action • Waterway protection</span>
           </div>
-        </a>
+        </div>
 
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
-        </button>
-
-        <nav class="nav-links" aria-label="Primary navigation">
-          <div class="nav-links-row">
-            <a href="#about">About</a>
-            <a href="#beneficiaries">Beneficiaries</a>
-            <a href="#app-experience">App & Dashboard</a>
-            <a href="#projects">Projects</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#team">Team</a>
-            <a href="#get-involved">Get involved</a>
-          </div>
-          <a href="#contact" class="nav-cta">
-            <span>Join the movement</span>
-            <span class="btn-icon">↗</span>
-          </a>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#problem">Why it matters</a>
+          <a href="#approach">Approach</a>
+          <a href="#app">App & Data</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#team">Team</a>
         </nav>
+
+        <a href="#contact" class="nav-cta">Join the journey <span>↗</span></a>
       </div>
     </header>
 
-    <main id="top">
-      <!-- Hero -->
-      <section class="hero" aria-labelledby="hero-heading">
+    <main>
+      <section class="hero">
         <div class="max-width hero-grid">
           <div>
-            <div class="eyebrow">
-              <div class="eyebrow-dot"></div>
-              <span>Youth-led, data-driven, community powered</span>
-            </div>
-
-            <h2 id="hero-heading">
-              <span class="hero-highlight">Empowering underserved communities</span><br />
-              to act on environmental risks.
-            </h2>
-
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Youth-led • Community-based • Early-stage</div>
+            <h2>Reducing waste pollution and <span class="hero-highlight">protecting local waterways</span> through community action.</h2>
             <p>
-              EcoConnect is a youth-led initiative that combines technology, education, and community action
-              to transform how climate-vulnerable communities understand, report, and respond to pollution and
-              environmental risks.
+              EcoConnect Initiative is building a practical, community-led system that combines waste management,
+              environmental education, local reporting, and restoration activities to create cleaner surroundings and healthier waterways in Lagos, Nigeria.
             </p>
 
-            <div class="hero-metrics" aria-label="EcoConnect impact snapshot">
-              <div class="metric">
-                <span class="metric-main">6,000+</span>
-                <span class="metric-label">Residents in Ketu living with unmanaged waste</span>
-              </div>
-              <div class="metric">
-                <span class="metric-main">1,000</span>
-                <span class="metric-label">Target EcoConnect members in year one</span>
-              </div>
-              <div class="metric">
-                <span class="metric-main">10+</span>
-                <span class="metric-label">Youth Eco‑Ambassadors trained per community</span>
-              </div>
+            <div class="hero-metrics">
+              <div class="metric"><span class="metric-main">Waste hotspots</span><span class="metric-label">identified through pilot testing</span></div>
+              <div class="metric"><span class="metric-main">Community action</span><span class="metric-label">cleanups, education, local engagement</span></div>
+              <div class="metric"><span class="metric-main">Restoration focus</span><span class="metric-label">waterways, tree planting, safer disposal</span></div>
             </div>
 
             <div class="hero-actions">
-              <a href="#get-involved" class="btn-primary">
-                Become an Eco Ambassador
-                <span class="btn-icon">🌱</span>
-              </a>
-              <a href="#projects" class="btn-ghost">
-                Explore our projects
-              </a>
+              <a class="btn-primary" href="#about">Explore the initiative</a>
+              <a class="btn-ghost" href="#gallery">View community work</a>
             </div>
           </div>
 
-          <div class="hero-visual-wrapper" aria-hidden="true">
+          <div class="hero-visual-wrapper">
             <div class="hero-visual-layer"></div>
             <div class="hero-visual-card">
               <div class="mockup-phone">
                 <div class="mockup-frame-inner">
-                  <!-- EcoConnect app screen -->
-                  <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/EcoConnect%20Display.png" alt="EcoConnect mobile app interface with education, reporting and challenges" />
+                  <div class="placeholder">EcoConnect app mockup<br/>Community reporting • hotspot updates • local alerts</div>
                 </div>
                 <div class="mockup-caption">
-                  <span>EcoConnect app – learn, report, act from your phone.</span>
-                  <span class="pill-tag"><span>App</span> Live prototype</span>
+                  <span>Resident-friendly reporting and education interface</span>
+                  <span class="pill-tag">App concept</span>
                 </div>
               </div>
 
               <div class="mockup-dashboard">
                 <div class="mockup-frame-inner">
-                  <!-- EcoConnect dashboard prototype -->
-                  <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/EcoConnect%20Dashboard%20Design%20Prototype.png" alt="EcoConnect dashboard visualizing community reports, hotspots and risk alerts" />
+                  <div class="placeholder">Dashboard mockup<br/>Hotspot visibility • trends • response planning</div>
                 </div>
                 <div class="mockup-caption">
-                  <span>Dashboard shows hotspots, trends & risk alerts in real time.</span>
-                  <span class="pill-tag"><span>Data</span> Community insights</span>
+                  <span>Simple data view to guide early interventions</span>
+                  <span class="pill-tag">Dashboard</span>
                 </div>
               </div>
             </div>
@@ -1210,550 +418,285 @@
         </div>
       </section>
 
-      <!-- About / What is EcoConnect -->
-      <section id="about" aria-labelledby="about-heading">
+      <section id="about">
         <div class="max-width card-layered">
-          <div class="card-main">
-            <div class="section-header">
-              <p class="section-kicker">About the initiative</p>
-              <h2 class="section-title" id="about-heading">What is EcoConnect?</h2>
-              <p class="section-subtitle">
-                A youth-led platform that turns environmental data into practical action through education,
-                real-time reporting, and grassroots mobilization.
-              </p>
-            </div>
-
-            <div class="two-column">
+          <div class="card-main two-column">
+            <div>
+              <div class="section-kicker">About EcoConnect</div>
+              <h2 class="section-title">A community-led response to waste pollution</h2>
               <div class="body-text">
                 <p>
-                  EcoConnect combines technology, environmental education, and community action to drive
-                  grassroots change. Through our mobile app, residents access real-time data, practical learning
-                  materials, and local environmental reports.
+                  EcoConnect Initiative is a youth-led, community-based project focused on waste management,
+                  waterway protection, and restoring polluted spaces through practical local action.
                 </p>
                 <p>
-                  Youth Eco‑Ambassadors bridge the gap between digital tools and lived realities. They teach
-                  households, facilitate cleanups, and support neighbours to use the app for reporting issues,
-                  learning, and tracking progress.
+                  Our work begins with the realities communities already face: open dumping, blocked drainage,
+                  polluted waterways, unsafe burning, and limited disposal options. We respond with a system that is simple,
+                  participatory, and designed to grow through community trust.
                 </p>
-                <p>
-                  A data dashboard visualises trends and pollution hotspots, while AI helps generate predictive
-                  alerts. By translating complex data into accessible knowledge, EcoConnect empowers communities
-                  to protect their environment, make informed decisions, and act sustainably.
-                </p>
-
-                <div class="badge-row">
-                  <span class="soft-badge">Real‑time environmental reporting</span>
-                  <span class="soft-badge">Youth‑led education & mobilisation</span>
-                  <span class="soft-badge">Community‑level data for policy</span>
-                </div>
               </div>
-
-              <div class="body-text">
-                <h3 style="font-size:1.02rem; margin-bottom:0.4rem;">Why EcoConnect exists</h3>
-                <p>
-                  In underserved communities, pollution and waste mismanagement are everyday realities.
-                  Residents face overflowing drains, open dumping, and burning of waste – yet lack accessible
-                  information, tools, and data to respond.
-                </p>
-                <p>
-                  Occasional cleanups and distant policies rarely lead to lasting behaviour change. EcoConnect
-                  offers a different approach: co‑creating solutions with the community, building local capacity,
-                  and ensuring that data and decisions are shaped by those most affected.
-                </p>
+            </div>
+            <div>
+              <div class="section-kicker">What the initiative combines</div>
+              <div class="badge-row">
+                <span class="soft-badge">Community cleanups</span>
+                <span class="soft-badge">Waste collection points</span>
+                <span class="soft-badge">Environmental education</span>
+                <span class="soft-badge">Hotspot reporting</span>
+                <span class="soft-badge">Youth mobilisation</span>
+                <span class="soft-badge">Tree planting</span>
+                <span class="soft-badge">Waterway protection</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Problem, Motivation, What makes us different -->
-      <section aria-labelledby="problem-heading">
+      <section id="problem">
         <div class="max-width">
           <div class="section-header">
-            <p class="section-kicker">Our why</p>
-            <h2 class="section-title" id="problem-heading">From lived experience to shared solutions</h2>
-            <p class="section-subtitle">
-              EcoConnect is rooted in the founder's lived experience of growing up where pollution was
-              normalised and environmental education was absent.
-            </p>
+            <div class="section-kicker">Why it matters</div>
+            <h2 class="section-title">The problem we are working to change</h2>
+            <p class="section-subtitle">Poor waste management affects health, livelihoods, and the condition of local ecosystems.</p>
           </div>
 
           <div class="stacked-cards">
             <article class="stacked-card">
-              <div class="chip"><span class="chip-dot"></span><span>Problem</span></div>
-              <h3>Pollution without power, risk without data</h3>
-              <p>
-                In communities like Ketu, unmanaged waste, blocked drainage, and air pollution expose residents
-                – especially youth, informal workers, and those in informal settlements – to serious health and
-                climate risks. Existing interventions are often top‑down, one‑off, and disconnected from daily
-                realities, leaving people uninformed and disengaged from long‑term action.
-              </p>
+              <div class="chip"><span class="chip-dot"></span> Waste</div>
+              <h3>Open dumping and poor disposal</h3>
+              <p>Waste is often discarded in open spaces, drainage channels, and near waterways where formal systems are weak or absent.</p>
             </article>
-
             <article class="stacked-card">
-              <div class="chip"><span class="chip-dot"></span><span>Personal motivation</span></div>
-              <h3>“I'm not just solving a problem – I've lived it.”</h3>
-              <p>
-                Growing up where pollution was normal and environmental education was missing, Mofiyinfoluwa
-                Odeyemi has led cleanups, educated peers, and co‑designed grassroots campaigns. EcoConnect is an
-                extension of this journey – a way to make climate education, reporting, and action accessible for
-                communities that have historically been left out of environmental decision‑making.
-              </p>
+              <div class="chip"><span class="chip-dot"></span> Waterways</div>
+              <h3>Polluted water and blocked flow</h3>
+              <p>Accumulated waste can pollute water sources, disrupt drainage, and threaten fish, riparian habitats, and the people who depend on them.</p>
             </article>
-
             <article class="stacked-card">
-              <div class="chip"><span class="chip-dot"></span><span>What makes us different</span></div>
-              <h3>Tech + youth leadership + community data</h3>
-              <p>
-                EcoConnect goes beyond awareness campaigns. We combine localized, gamified education, practical
-                action guides, reporting, recycling access, and youth‑led mobilisation in one integrated platform.
-                Eco Ambassadors from within the community build trust and adoption, while real‑time data on
-                pollution hotspots helps policymakers act on evidence, not assumptions.
-              </p>
+              <div class="chip"><span class="chip-dot"></span> Health</div>
+              <h3>Unsafe coping practices</h3>
+              <p>Where disposal options are limited, open burning and unsafe waste handling become common, increasing environmental and health risks.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Beneficiaries & Approach -->
-      <section id="beneficiaries" aria-labelledby="beneficiaries-heading">
-        <div class="max-width">
-          <div class="section-header">
-            <p class="section-kicker">Who we serve</p>
-            <h2 class="section-title" id="beneficiaries-heading">Communities at the frontlines of environmental risk</h2>
-            <p class="section-subtitle">
-              EcoConnect begins in Ketu, Lagos – a climate‑vulnerable community generating 5–6 tons of unmanaged
-              waste daily – with a vision to scale to similar communities.
-            </p>
-          </div>
-
-          <div class="benefit-grid">
-            <div>
+      <section id="approach">
+        <div class="max-width benefit-grid">
+          <div class="card-layered">
+            <div class="card-main">
+              <div class="section-kicker">Our approach</div>
+              <h2 class="section-title">How EcoConnect works</h2>
               <ul class="benefit-list">
                 <li class="benefit-item">
-                  <div class="benefit-icon">🏠</div>
+                  <div class="benefit-icon">1</div>
                   <div>
-                    <h3>Households & informal workers</h3>
-                    <p>
-                      Residents, market traders, and small business owners most exposed to pollution gain access to
-                      clear, practical tools for reporting issues, learning safer practices, and tracking how their
-                      actions add up.
-                    </p>
+                    <h3>Community-led cleanups</h3>
+                    <p>Regular cleanups help remove waste before it reaches waterways while creating visible entry points for trust-building and action.</p>
                   </div>
                 </li>
                 <li class="benefit-item">
-                  <div class="benefit-icon">🧒</div>
+                  <div class="benefit-icon">2</div>
                   <div>
-                    <h3>Youth as changemakers</h3>
-                    <p>
-                      Young people (18–30) are trained as Eco Ambassadors – local educators, mobilisers, and digital
-                      liaisons. They gain leadership and green skills while driving school clubs, cleanups, and
-                      neighbourhood campaigns.
-                    </p>
+                    <h3>Designated collection points</h3>
+                    <p>Collection points make safer disposal more practical and reduce repeated dumping in high-risk areas.</p>
                   </div>
                 </li>
                 <li class="benefit-item">
-                  <div class="benefit-icon">👩‍👧</div>
+                  <div class="benefit-icon">3</div>
                   <div>
-                    <h3>Women & marginalised groups</h3>
-                    <p>
-                      Women, caregivers, and groups often excluded from environmental decision‑making are prioritised in
-                      trainings, feedback loops, and leadership roles, ensuring that solutions are truly inclusive.
-                    </p>
+                    <h3>Simple reporting and response</h3>
+                    <p>Residents help identify recurring pollution hotspots so action can be focused where it matters most.</p>
                   </div>
                 </li>
                 <li class="benefit-item">
-                  <div class="benefit-icon">🏛️</div>
+                  <div class="benefit-icon">4</div>
                   <div>
-                    <h3>Local governments & policymakers</h3>
-                    <p>
-                      Reliable, community‑level environmental data generated through the app supports better policies,
-                      targeting of resources, and transparent collaboration between residents and authorities.
-                    </p>
+                    <h3>Education and restoration</h3>
+                    <p>Environmental education, youth mobilisation, and tree planting support behaviour change and recovery of degraded spaces over time.</p>
                   </div>
                 </li>
               </ul>
             </div>
+          </div>
 
-            <aside class="approach-card">
-              <h3>How EcoConnect works in each community</h3>
-              <p class="body-text">
-                Each EcoConnect rollout blends technology, storytelling, and on‑the‑ground mobilisation:
-              </p>
-              <ul class="feature-list">
-                <li>
-                  <div class="feature-bullet"></div>
-                  <span>Recruit and train Eco Ambassadors drawn from within the community.</span>
-                </li>
-                <li>
-                  <div class="feature-bullet"></div>
-                  <span>Launch the EcoConnect app with localised learning paths, games and reporting tools.</span>
-                </li>
-                <li>
-                  <div class="feature-bullet"></div>
-                  <span>Host cleanups, dialogues, and market sensitisation drives that reinforce digital learning.</span>
-                </li>
-                <li>
-                  <div class="feature-bullet"></div>
-                  <span>Use dashboards to track hotspots, celebrate progress and inform advocacy with evidence.</span>
-                </li>
-              </ul>
-
-              <div class="approach-pill-row" aria-label="Core pillars of EcoConnect">
-                <span class="approach-pill">Education</span>
-                <span class="approach-pill">Real‑time reporting</span>
-                <span class="approach-pill">Predictive alerts</span>
-                <span class="approach-pill">Youth leadership</span>
-                <span class="approach-pill">Community data for policy</span>
-              </div>
-            </aside>
+          <div class="approach-card">
+            <h3>Seed-stage implementation focus</h3>
+            <p class="body-text">
+              EcoConnect is currently in its early pilot phase. The immediate focus is to strengthen local trust, confirm waste hotspots,
+              introduce simple reporting, work with local waste collectors, and build a practical foundation for safer disposal and waterway protection.
+            </p>
+            <div class="approach-pill-row">
+              <span class="approach-pill">Pilot testing</span>
+              <span class="approach-pill">Community validation</span>
+              <span class="approach-pill">Hotspot targeting</span>
+              <span class="approach-pill">Local coordination</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- App & Dashboard Section -->
-      <section id="app-experience" aria-labelledby="app-heading">
-        <div class="max-width">
-          <div class="section-header">
-            <p class="section-kicker">The EcoConnect platform</p>
-            <h2 class="section-title" id="app-heading">From reports to risk alerts – all in one eco‑system</h2>
-            <p class="section-subtitle">
-              A mobile app for residents, a web dashboard for partners, and Eco Ambassadors connecting it all on the
-              ground.
+      <section id="app">
+        <div class="max-width app-section">
+          <div class="app-copy">
+            <div class="section-kicker">App & data flow</div>
+            <h2 class="section-title">A simple reporting layer that supports community action</h2>
+            <p>
+              EcoConnect’s digital concept is designed to support, not replace, local action. Residents can report recurring waste hotspots,
+              while a simple dashboard helps visualise patterns and guide cleanup response, collection point placement, and future interventions.
             </p>
+            <p>
+              At this stage, the focus is on practical early use: community reporting, visible hotspot tracking, and making local environmental information easier to act on.
+            </p>
+            <ul class="feature-list">
+              <li><span class="feature-bullet"></span><span>Community-submitted reports of waste accumulation and pollution hotspots</span></li>
+              <li><span class="feature-bullet"></span><span>Simple dashboard views to support planning and prioritisation</span></li>
+              <li><span class="feature-bullet"></span><span>Local education content to reinforce safer disposal and environmental awareness</span></li>
+            </ul>
           </div>
 
-          <div class="app-section">
-            <div class="app-copy">
-              <p>
-                Designed with communities, the EcoConnect app makes environmental action simple, multilingual, and
-                rewarding. Residents can learn, play, report issues and follow up on progress – all from their phones.
-              </p>
-
-              <ul class="feature-list" aria-label="Key features of the EcoConnect app">
-                <li>
-                  <div class="feature-bullet"></div>
-                  <span><strong>Education hub:</strong> bite‑sized lessons and action tips on waste, air quality, water,
-                    and climate resilience.</span>
-                </li>
-                <li>
-                  <div class="feature-bullet"></div>
-                  <span><strong>Reporting & surveys:</strong> residents log pollution hotspots, blocked drains, and
-                    illegal dumping with photos and simple categories.</span>
-                </li>
-                <li>
-                  <div class="feature-bullet"></div>
-                  <span><strong>Games & challenges:</strong> gamified quizzes and community challenges that reward
-                    learning and participation.</span>
-                </li>
-                <li>
-                  <div class="feature-bullet"></div>
-                  <span><strong>Community forum:</strong> conversations, feedback, and collaboration between residents,
-                    Eco Ambassadors and partners.</span>
-                </li>
-                <li>
-                  <div class="feature-bullet"></div>
-                  <span><strong>AI‑assisted alerts:</strong> patterns in reports trigger risk alerts and recommendations
-                    for local authorities and community leaders.</span>
-                </li>
-              </ul>
-
-              <div style="margin-top:1.3rem; display:flex; flex-wrap:wrap; gap:0.8rem; align-items:center;">
-                <span class="soft-badge">Mobile first</span>
-                <span class="soft-badge">Low‑bandwidth friendly</span>
-                <span class="soft-badge">Built for Lagos, adaptable beyond</span>
+          <div class="app-mockup-stack">
+            <div class="app-mock-card">
+              <div class="app-mock-inner">
+                <div class="placeholder">Replace with app screen image</div>
+              </div>
+              <div class="app-mock-label">
+                <span>Reporting flow for residents and volunteers</span>
+                <span class="pill-tag">Mobile</span>
               </div>
             </div>
+            <div class="app-mock-card">
+              <div class="app-mock-inner">
+                <div class="placeholder">Replace with dashboard image</div>
+              </div>
+              <div class="app-mock-label">
+                <span>Hotspot visibility for local response planning</span>
+                <span class="pill-tag">Data view</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- Projects -->
-      <section id="projects" aria-labelledby="projects-heading">
+      <section id="projects">
         <div class="max-width">
           <div class="section-header">
-            <p class="section-kicker">Our projects</p>
-            <h2 class="section-title" id="projects-heading">Cleanups, conversations, and community data</h2>
-            <p class="section-subtitle">
-              EcoConnect pilots combine hands‑on cleanups, market sensitisation, and data collection to
-              demonstrate what is possible when communities co‑lead environmental action.
-            </p>
+            <div class="section-kicker">Focus areas</div>
+            <h2 class="section-title">What our work is designed to improve</h2>
+            <p class="section-subtitle">EcoConnect connects waste action, environmental education, and restoration into one practical system.</p>
           </div>
 
           <div class="projects-grid">
             <article class="project-card">
-              <div class="project-tag">Market clean‑up & waste sensitisation – Ketu</div>
-              <h3 class="project-title">From crowded market to cleaner shared space</h3>
-              <p class="project-desc">
-                In Ketu market, EcoConnect mobilised traders, shoppers, and youth volunteers for a hands‑on cleanup.
-                Through practical demonstrations and stall‑to‑stall conversations, we highlighted the health and
-                economic costs of unmanaged waste – and how everyday actions can shift the story.
-              </p>
+              <div class="project-tag">Waste management</div>
+              <h3 class="project-title">Reduce dumping at source</h3>
+              <p class="project-desc">By combining collection points, cleanups, and local coordination, EcoConnect aims to make proper disposal easier and more visible.</p>
+              <div class="project-meta">Accessible community systems • cleaner shared spaces</div>
             </article>
-
             <article class="project-card">
-              <div class="project-tag">Market clean‑up & waste sensitisation – Ikeja underbridge</div>
-              <h3 class="project-title">Reclaiming public spaces from waste</h3>
-              <p class="project-desc">
-                Under the busy Ikeja bridge, informal workers and commuters navigate piles of waste daily. EcoConnect
-                is partnering with youth groups and traders to co‑design a cleanup and sensitisation drive that pairs
-                action with ongoing reporting through the app.
-              </p>
+              <div class="project-tag">Waterway protection</div>
+              <h3 class="project-title">Prevent pollution from reaching waterways</h3>
+              <p class="project-desc">Targeting recurring hotspots helps reduce the waste that ends up in drainage channels, streams, and other local water bodies.</p>
+              <div class="project-meta">Cleaner surroundings • healthier waterways</div>
+            </article>
+            <article class="project-card">
+              <div class="project-tag">Education</div>
+              <h3 class="project-title">Strengthen awareness and behaviour change</h3>
+              <p class="project-desc">Short, practical education sessions help communities understand safer alternatives to dumping and burning.</p>
+              <div class="project-meta">Local knowledge • healthier habits</div>
+            </article>
+            <article class="project-card">
+              <div class="project-tag">Restoration</div>
+              <h3 class="project-title">Support recovery of degraded spaces</h3>
+              <p class="project-desc">Tree planting along polluted waterways is planned as a later-stage restoration activity once waste levels are reduced and communities are ready.</p>
+              <div class="project-meta">Riparian recovery • afforestation support</div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Gallery -->
-      <section id="gallery" aria-labelledby="gallery-heading">
-        <div class="max-width card-layered">
-          <div class="card-main">
-            <div class="section-header">
-              <p class="section-kicker">In pictures</p>
-              <h2 class="section-title" id="gallery-heading">Moments from the EcoConnect journey</h2>
-              <p class="section-subtitle">
-                A growing visual archive of cleanups, trainings, and everyday people choosing a greener future.
-              </p>
-            </div>
-
-            <div class="gallery-grid" aria-label="EcoConnect gallery">
-              <!-- Ketu market clean‑up series (market_cleanup1a–1d) -->
-              <figure class="gallery-item">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1b.jpg" alt="Volunteers leading a cleanup at Ketu market" />
-                <figcaption class="gallery-label"><span>Ketu market</span> – Volunteer‑led cleanup drive.</figcaption>
-              </figure>
-              <figure class="gallery-item">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1c.jpg" alt="Traders sweeping and sorting waste at Ketu market" />
-                <figcaption class="gallery-label"><span>Ketu market</span> – Traders sweeping and sorting waste.</figcaption>
-              </figure>
-              <figure class="gallery-item">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1d.jpg" alt="Traders sweeping and sorting waste at Ketu market" />
-                <figcaption class="gallery-label"><span>Ketu market</span> – Traders sweeping and sorting waste.</figcaption>
-              </figure>
-              <figure class="gallery-item">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup1a.jpg" alt="Group photo after cleanup at Ketu market" />
-                <figcaption class="gallery-label"><span>Community</span> – Celebrating a cleaner shared space.</figcaption>
-              </figure>
-
-              <!-- Ikeja & Eco Ambassadors series -->
-              <figure class="gallery-item">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup2b.jfif" alt="Ikeja underbridge cleanup in progress" />
-                <figcaption class="gallery-label"><span>Ikeja underbridge</span> – Cleanup in progress.</figcaption>
-              </figure>
-              <figure class="gallery-item">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup2d.jfif" alt="Eco Ambassadors leading market sensitisation" />
-                <figcaption class="gallery-label"><span>Eco Ambassadors</span> – Youth leading market sensitisation.</figcaption>
-              </figure>
-              <figure class="gallery-item">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup2c.jfif" alt="Traders cleaning up waste at Ikeja market" />
-                <figcaption class="gallery-label"><span>Ikeja market</span> – Traders cleaning up waste.</figcaption>
-              </figure>
-              <figure class="gallery-item">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/market_cleanup%202e.jpg" alt="Community celebrating a cleaner shared space" />
-                <figcaption class="gallery-label"><span>Community</span> – Celebrating a cleaner shared space.</figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Team -->
-      <section id="team" aria-labelledby="team-heading">
+      <section id="gallery">
         <div class="max-width">
           <div class="section-header">
-            <p class="section-kicker">Our team</p>
-            <h2 class="section-title" id="team-heading">Led by young Africans re‑imagining environmental action</h2>
-            <p class="section-subtitle">
-              The EcoConnect Initiative is driven by a multidisciplinary team that blends environmental safety,
-              public health, data, and community organising.
-            </p>
+            <div class="section-kicker">Gallery</div>
+            <h2 class="section-title">Early field activity and community engagement</h2>
+            <p class="section-subtitle">The second row has been removed for now. Additional images can be added later without changing the overall layout.</p>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <div class="placeholder">Ketu image 1</div>
+              <figcaption class="gallery-label"><span>Ketu</span> • Community action</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <div class="placeholder">Ketu image 2</div>
+              <figcaption class="gallery-label"><span>Ketu</span> • Cleanup activity</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <div class="placeholder">Ketu image 3</div>
+              <figcaption class="gallery-label"><span>Ketu</span> • Waste-affected area</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <div class="placeholder">Ketu image 4</div>
+              <figcaption class="gallery-label"><span>Ketu</span> • Early pilot work</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="team">
+        <div class="max-width">
+          <div class="section-header">
+            <div class="section-kicker">Team</div>
+            <h2 class="section-title">The people behind EcoConnect Initiative</h2>
+            <p class="section-subtitle">Add each team member’s photo above their write-up to keep the layout clean and consistent.</p>
           </div>
 
           <div class="team-layout">
             <article class="team-card">
-              <div class="team-photo-frame">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/Mofiyinfoluwa%20Odeyemi%20.jfif" alt="Portrait of Mofiyinfoluwa Odeyemi" />
-              </div>
-              <div class="team-role-tag">Project Lead</div>
-              <div class="team-name">Mofiyinfoluwa Odeyemi (She/Her)</div>
-              <p class="team-bio">
-                An Environmental, Health & Safety officer with experience in grassroots campaigns and community
-                partnerships. Mofiyinfoluwa leads strategy, partnerships, and funding coordination, ensuring that
-                EcoConnect remains community‑driven, accountable, and impact‑focused.
-              </p>
+              <div class="team-photo"><div class="placeholder">Team member photo</div></div>
+              <h3>Team Member Name</h3>
+              <div class="team-role">Team Lead</div>
+              <p>Write a short description of this team member’s role, experience, and contribution to EcoConnect Initiative here.</p>
             </article>
-
             <article class="team-card">
-              <div class="team-photo-frame">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/Victory%20Oluwatunmise.jfif" alt="Portrait of Oluwatunmise Victory" />
-              </div>
-              <div class="team-role-tag">Head of Program</div>
-              <div class="team-name">Oluwatunmise Victory (She/Her)</div>
-              <p class="team-bio">
-                A Public Health professional and CIPM‑certified practitioner focused on programme delivery and
-                community outreach. She coordinates the Eco Ambassador network, designs participatory workshops, and
-                drives volunteer engagement for sustained adoption of the app.
-              </p>
+              <div class="team-photo"><div class="placeholder">Team member photo</div></div>
+              <h3>Team Member Name</h3>
+              <div class="team-role">Operations / Partnerships</div>
+              <p>Write a short description of this team member’s role, experience, and contribution to EcoConnect Initiative here.</p>
             </article>
-
             <article class="team-card">
-              <div class="team-photo-frame">
-                <img src="https://raw.githubusercontent.com/ecoconnect-cloud/ecoconnect-initiative/main/Judah%20Moyin-Jesu.jfif" alt="Portrait of Judah Moyin‑Jesu" />
-              </div>
-              <div class="team-role-tag">Monitoring & Evaluation Lead</div>
-              <div class="team-name">Judah Moyin‑Jesu (He/Him)</div>
-              <p class="team-bio">
-                A GIS graduate with 3+ years of experience in programme evaluation, data analysis, and geospatial
-                mapping. Judah oversees impact tracking through app analytics, surveys, and ambassador reporting,
-                ensuring measurable and transparent results.
-              </p>
+              <div class="team-photo"><div class="placeholder">Team member photo</div></div>
+              <h3>Team Member Name</h3>
+              <div class="team-role">Community Engagement / Data</div>
+              <p>Write a short description of this team member’s role, experience, and contribution to EcoConnect Initiative here.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Eco Blog teaser -->
-      <section aria-labelledby="blog-heading">
-        <div class="max-width blog-banner">
-          <div>
-            <div class="blog-badge">Coming soon – The Eco Blog</div>
-            <h3 id="blog-heading">“The environment shapes every breath, every bite, every step.”</h3>
-            <p>
-              🌿 <strong>Did you know?</strong> The environment affects every part of our lives – from the air we breathe
-              to the food we eat. Through the Eco Blog, you will discover stories, tips, and tools to live more
-              sustainably, wherever you are.
-            </p>
-            <p style="margin-top:0.7rem;">
-              We will spotlight youth voices, community innovations, and small actions that lead to big shifts.
-              Subscribe to be notified when we launch.
-            </p>
-          </div>
-
-          <div>
-            <p class="blog-stat">What to expect:</p>
-            <ul class="feature-list" style="margin-top:0.4rem;">
-              <li>
-                <div class="feature-bullet"></div>
-                <span>Short explainers on waste, air quality, flooding, and climate adaptation.</span>
-              </li>
-              <li>
-                <div class="feature-bullet"></div>
-                <span>Practical guides for households, youth groups, and markets.</span>
-              </li>
-              <li>
-                <div class="feature-bullet"></div>
-                <span>Impact stories from Eco Ambassadors and partner communities.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Get involved & Contact -->
-      <section id="get-involved" aria-labelledby="involved-heading">
+      <section id="contact">
         <div class="max-width">
-          <div class="section-header">
-            <p class="section-kicker">Join us</p>
-            <h2 class="section-title" id="involved-heading">Volunteer, partner, or support the movement</h2>
-            <p class="section-subtitle">
-              EcoConnect grows through collaboration. Whether you are a youth leader, NGO, school, business,
-              or public agency, there is a place for you in this story.
+          <div class="cta-panel">
+            <h3>Building cleaner communities takes collective effort.</h3>
+            <p>
+              EcoConnect Initiative is growing through local action, community trust, and practical environmental solutions.
+              Follow the journey, support the work, or partner with us as we continue testing and strengthening the model.
             </p>
-          </div>
-
-          <div class="involved-grid">
-            <div>
-              <div class="engage-cards">
-                <article class="engage-card">
-                  <div class="engage-chip">Volunteer</div>
-                  <h3>Become an Eco Ambassador</h3>
-                  <p>
-                    Join our youth network to lead cleanups, host learning circles, and support neighbours in using the
-                    EcoConnect app.
-                  </p>
-                </article>
-
-                <article class="engage-card">
-                  <div class="engage-chip">Partner</div>
-                  <h3>Collaborate on programmes</h3>
-                  <p>
-                    NGOs, schools, youth groups, and local agencies can partner with us on pilots, data sharing,
-                    and advocacy.
-                  </p>
-                </article>
-
-                <article class="engage-card">
-                  <div class="engage-chip">Support</div>
-                  <h3>Donate or sponsor</h3>
-                  <p>
-                    Support Ambassador trainings, devices, and community projects so more neighbourhoods can access
-                    EcoConnect.
-                  </p>
-                </article>
-              </div>
-
-              <div style="margin-top:1.3rem; font-size:0.86rem; color:var(--text-muted);">
-                Looking to co‑design a pilot in your community, school, or market? Reach out and let's explore what
-                is possible together.
-              </div>
+            <div class="hero-actions" style="justify-content:center;">
+              <a class="btn-primary" href="#gallery">See our work</a>
+              <a class="btn-ghost" href="mailto:hello@ecoconnect.org">Contact EcoConnect</a>
             </div>
-
-            <aside id="contact" class="contact-card" aria-label="Contact details">
-              <h3 style="font-family:'Playfair Display', serif; font-size:1.3rem; margin-bottom:0.4rem;">Get in touch</h3>
-              <p>
-                For collaborations, media, or volunteering enquiries, contact the EcoConnect Initiative using the
-                details below.
-              </p>
-
-              <div class="contact-row" style="margin-top:1rem;">
-                <div class="contact-label">Phone</div>
-                <div class="contact-value"><a href="tel:+2348163374572">+234&nbsp;816&nbsp;337&nbsp;4572</a></div>
-              </div>
-              <div class="contact-row">
-                <div class="contact-label">Email</div>
-                <div class="contact-value"><a href="mailto:ecoconnect.intiative@gmail.com">ecoconnect.intiative@gmail.com</a></div>
-              </div>
-
-              <div class="contact-row" style="margin-top:1rem;">
-                <div class="contact-label">Location</div>
-                <div class="contact-value">Lagos, Nigeria</div>
-              </div>
-
-              <p style="margin-top:1.1rem; font-size:0.84rem; color:var(--text-muted);">
-                We welcome partnerships that centre community voices and long‑term environmental justice.
-              </p>
-            </aside>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="max-width footer-inner">
-        <p>© <span id="year"></span> The EcoConnect Initiative. Empowering communities for a greener future.</p>
-        <div class="footer-links">
-          <span>Built with love for people & planet.</span>
-        </div>
+      <div class="max-width footer-row">
+        <p>© 2026 EcoConnect Initiative. All rights reserved.</p>
+        <p>Youth-led • Waste management • Waterway protection • Restoration</p>
       </div>
     </footer>
   </div>
-
-  <script>
-    // Update footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Mobile navigation toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-open');
-    });
-
-    // Close nav when a link is clicked (mobile)
-    navLinks.addEventListener('click', (event) => {
-      if (event.target.tagName.toLowerCase() === 'a') {
-        navLinks.classList.remove('nav-open');
-      }
-    });
-  </script>
 </body>
 </html>
